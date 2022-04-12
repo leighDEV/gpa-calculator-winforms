@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lstbGrades = new System.Windows.Forms.ListBox();
             this.lblGrade = new System.Windows.Forms.Label();
             this.tbGrade = new System.Windows.Forms.TextBox();
@@ -44,16 +45,16 @@
             this.lstbGrades.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lstbGrades.FormattingEnabled = true;
             this.lstbGrades.ItemHeight = 25;
-            this.lstbGrades.Location = new System.Drawing.Point(273, 22);
+            this.lstbGrades.Location = new System.Drawing.Point(267, 22);
             this.lstbGrades.Name = "lstbGrades";
-            this.lstbGrades.Size = new System.Drawing.Size(126, 254);
+            this.lstbGrades.Size = new System.Drawing.Size(98, 254);
             this.lstbGrades.TabIndex = 1;
             // 
             // lblGrade
             // 
             this.lblGrade.AutoSize = true;
             this.lblGrade.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrade.Location = new System.Drawing.Point(26, 30);
+            this.lblGrade.Location = new System.Drawing.Point(22, 24);
             this.lblGrade.Name = "lblGrade";
             this.lblGrade.Size = new System.Drawing.Size(65, 25);
             this.lblGrade.TabIndex = 0;
@@ -63,7 +64,7 @@
             // 
             this.tbGrade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbGrade.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbGrade.Location = new System.Drawing.Point(99, 22);
+            this.tbGrade.Location = new System.Drawing.Point(93, 22);
             this.tbGrade.Name = "tbGrade";
             this.tbGrade.Size = new System.Drawing.Size(158, 33);
             this.tbGrade.TabIndex = 2;
@@ -72,7 +73,7 @@
             // 
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(99, 61);
+            this.btnAdd.Location = new System.Drawing.Point(93, 61);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(158, 34);
             this.btnAdd.TabIndex = 3;
@@ -84,7 +85,7 @@
             // 
             this.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculate.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(99, 242);
+            this.btnCalculate.Location = new System.Drawing.Point(93, 242);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(158, 34);
             this.btnCalculate.TabIndex = 3;
@@ -96,7 +97,7 @@
             // 
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemove.Location = new System.Drawing.Point(99, 139);
+            this.btnRemove.Location = new System.Drawing.Point(93, 139);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(158, 34);
             this.btnRemove.TabIndex = 3;
@@ -108,7 +109,7 @@
             // 
             this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClearAll.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearAll.Location = new System.Drawing.Point(99, 179);
+            this.btnClearAll.Location = new System.Drawing.Point(93, 179);
             this.btnClearAll.Name = "btnClearAll";
             this.btnClearAll.Size = new System.Drawing.Size(158, 34);
             this.btnClearAll.TabIndex = 3;
@@ -120,7 +121,7 @@
             // 
             this.lblGPA.AutoSize = true;
             this.lblGPA.Font = new System.Drawing.Font("Segoe UI Semilight", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGPA.Location = new System.Drawing.Point(279, 293);
+            this.lblGPA.Location = new System.Drawing.Point(262, 296);
             this.lblGPA.Name = "lblGPA";
             this.lblGPA.Size = new System.Drawing.Size(55, 25);
             this.lblGPA.TabIndex = 0;
@@ -130,7 +131,7 @@
             // 
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(99, 99);
+            this.btnClear.Location = new System.Drawing.Point(93, 99);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(158, 34);
             this.btnClear.TabIndex = 3;
@@ -143,7 +144,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(440, 340);
+            this.ClientSize = new System.Drawing.Size(387, 340);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.btnClearAll);
             this.Controls.Add(this.btnRemove);
@@ -156,6 +157,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.Name = "Form1";
