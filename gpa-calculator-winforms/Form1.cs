@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace gpa_calculator_winforms
 {
-    public partial class Form1 : Form
+    public partial class Form1 : MaterialForm
     {
         public Form1()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.LightBlue900, Primary.LightBlue800, Primary.LightBlue500, Accent.LightBlue200, TextShade.WHITE);
         }
 
         /// <summary>
@@ -24,8 +30,13 @@ namespace gpa_calculator_winforms
         /// <param name="e"></param>
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            lstbGrades.Items.Add(tbGrade.Text);
-            lblGPA.Text = "GPA: ";
+            if (tbGrade.Text != "")
+            {
+                lstbGrades.Items.Add(new MaterialListBoxItem(tbGrade.Text));
+                lblGPA.Text = "GPA: ";
+            }
+            else
+                MessageBox.Show("Textbox is empty.");
         }
 
         /// <summary>
